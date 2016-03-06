@@ -1,0 +1,18 @@
+<template name="cycleBrands">
+  <button class="add-new btn btn-primary">Add Brand</button><br>
+  <ul class="list-group">
+    {{#each brands}}
+      {{> brand}}
+    {{/each}}
+  </ul>
+</template>
+
+
+<template name="brand">
+  <li class='list-group-item'>
+    <span class="edit-brand cursor-p">{{name}}</span><span class="pull-right remove cursor-p">x</span>
+    <p>
+      {{descritpion}}
+    </p>
+  </li>
+</template>

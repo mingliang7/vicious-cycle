@@ -1,0 +1,8 @@
+<template name="newBrand">
+  {{> quickForm collection="Cycle.Collection.Brands" id="newBrand" type="insert"}}
+</template>
+
+
+<template name="editBrand">
+  {{> quickForm collection="Cycle.Collection.Brands" doc=this id="editBrand" type="update"}}
+</template>
